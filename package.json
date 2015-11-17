@@ -1,0 +1,36 @@
+{
+  "name": "mocha-phantomjs-hosted-jquery",
+  "version": "0.0.1",
+  "description": "An example using the mocha-phantomjs module with the goal of testing with a hosted library while not including the hosted library in the browserify package. https://github.com/nathanboktae/mocha-phantomjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint .",
+    "pretest": "npm run lint && browserify index.js > browser/dist/app.js",
+    "test": "mocha-phantomjs browser/example/example.htm",
+    "predeploy:js": "npm run lint",
+    "deploy:js": "browserify --exclude jquery index.js > browser/dist/app.js",
+    "deploy": "npm run deploy:js"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "chai": "^3.4.1",
+    "jquery": "^2.1.4",
+    "jshint": "latest",
+    "mocha": "^2.3.4",
+    "mocha-phantomjs": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost/Bonobo.Git.Server/mocha-phantomjs-hosted-jquery.git"
+  },
+  "keywords": [
+    "example",
+    "mocha",
+    "jquery",
+    "PhantomJS"
+  ],
+  "author": "Mike Puglisi <mikep@webpower.com> (http://clickcash.com)",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

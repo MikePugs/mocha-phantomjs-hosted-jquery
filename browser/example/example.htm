@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="test-libs/mocha.js"></script>
+    <script src="test-libs/chai.js"></script>
+
+    <script>
+      mocha.ui('bdd')
+      expect = chai.expect
+    </script>
+
+    <div data-example-app></div>
+    <div data-example-app></div>
+    <div data-example-app></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../dist/app.js"></script>
+    <script src="../../test/index.js"></script>
+    <script>
+      mocha.run();
+    </script>
+
+</body>
+</html>
