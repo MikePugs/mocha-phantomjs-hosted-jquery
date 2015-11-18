@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://localhost/Bonobo.Git.Server/mocha-phantomjs-hosted-jquery.git"
+    "url": "https://github.com/MikePugs/mocha-phantomjs-hosted-jquery.git"
   },
   "keywords": [
     "example",
